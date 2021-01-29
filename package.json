@@ -1,7 +1,7 @@
 {
   "name": "Mochi-Test-Back-End-MC",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "license": "MIT",
   "scripts": {
     "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/src/index.js",
