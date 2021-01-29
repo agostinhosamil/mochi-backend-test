@@ -22,7 +22,7 @@ for (let i: number = 0; i < currentDirectoryFileList.length; i++) {
 	let controllerName: string = currentDirectoryFileList[ i ].replace (
 		/((Controller)?\.(j|t)s)$/i, ''
 	)
-	let controllerCore: string = require (
+	let controllerCore = require (
 		path.resolve( __dirname, currentDirectoryFileList[ i ] )
 	)
 

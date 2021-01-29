@@ -5,7 +5,7 @@ var PagesController = /** @class */ (function () {
     function PagesController() {
     }
     PagesController.prototype.index = function (req, res) {
-        return res.end('Hello, World2..!');
+        res.end('Hello, World2..!');
     };
     return PagesController;
 }());
