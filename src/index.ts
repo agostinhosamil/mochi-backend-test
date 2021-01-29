@@ -4,8 +4,10 @@ import express from 'express'
 
 import { Routes } from './config/routes'
 
-const app = express()
+const app: express.Application = express()
 
+app.use(express.json())
+app.use(express.urlencoded())
 app.use(cors())
 app.use(Routes)
 
