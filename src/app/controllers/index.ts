@@ -3,14 +3,14 @@ import fs from 'fs'
 
 const currentDirectoryFileList: string[] = fs.readdirSync(__dirname)
 
-function upperCaseFirstChar (str: string): string {
+function lowerCaseFirstChar (str: string): string {
 	return str.charAt(0).toLowerCase() + (
 		str.substring(1, str.length)
 	)
 }
 
 function stripControllerNameExtension (str: string): string {
-	return upperCaseFirstChar (
+	return lowerCaseFirstChar (
 		str.replace (/(\.(j|t)s)$/i, '')
 	)
 }

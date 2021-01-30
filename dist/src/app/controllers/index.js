@@ -6,11 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var fs_1 = __importDefault(require("fs"));
 var currentDirectoryFileList = fs_1.default.readdirSync(__dirname);
-function upperCaseFirstChar(str) {
+function lowerCaseFirstChar(str) {
     return str.charAt(0).toLowerCase() + (str.substring(1, str.length));
 }
 function stripControllerNameExtension(str) {
-    return upperCaseFirstChar(str.replace(/(\.(j|t)s)$/i, ''));
+    return lowerCaseFirstChar(str.replace(/(\.(j|t)s)$/i, ''));
 }
 for (var i = 0; i < currentDirectoryFileList.length; i++) {
     var controllerPropName = currentDirectoryFileList[i].replace(/(\.(j|t)s)$/i, '');
